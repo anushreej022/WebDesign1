@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background: url('dogAdopt.jpeg') center/cover no-repeat;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    margin: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#dogImage {
+    display: block; 
+    margin: 0 auto; 
+}
+
+#text1 {
+    color: #333;
+    
+}
+
+#text1:hover {
+    color: blue; /* Change the color to blue on hover */
+}
+
+video {
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 500px; 
+}
+
+summary {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.dogs-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dog-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dog-image:hover {
+    transform: scale(1.2);
+}

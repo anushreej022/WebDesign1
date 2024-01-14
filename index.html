@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Dog-icon.png">
+    <title>Dog Adoption Center</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to PAWsitive</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Find Your Furry Friend</h2>
+        <p>Embark on a heartwarming journey to find your perfect furry companion at our Dog Adoption Center. Each enchanting dog in our care comes with a unique tale of resilience, loyalty, and love waiting to be shared. Explore a world of wagging tails, soulful eyes, and boundless joy as you navigate through our collection of adorable dogs ready for adoption.</p>
+
+        <p>Our center, we believe that every dog deserves a loving home, and every home deserves the unwavering companionship of a four-legged friend. Whether you're drawn to the playful antics of a Golden Retriever or the gentle nature of a Labrador Retriever, our diverse selection of dogs awaits your discovery.</p>
+            
+        <p>Discover not just a pet but a lifelong friend who will fill your days with laughter, warmth, and countless cherished moments. The journey to finding your furry friend begins here, where tails wag, hearts connect, and the magic of companionship unfolds. Welcome to a world of endless possibilities and the promise of unconditional love—your new best friend is waiting to make your life brighter.</p>
+        <strong id="text1"><i>To hear me say "WELCOME"? Click on the image below!</i></strong>
+        <img src="dogImg.jpeg" alt="Dog Adoption Image" id="dogImage" >
+        <br/>
+        <!-- Add an audio element with the dog barking sound -->
+        <audio id="dogBarkAudio" controls style="display: none;">
+            <source src="dog-barking.wav" type="audio/mp3">
+        
+        </audio>
+    </section>
+
+    <script>
+        // JavaScript to handle the click event and play the audio
+        document.getElementById('dogImage').addEventListener('click', function() {
+            var audio = document.getElementById('dogBarkAudio');
+            audio.play();
+        });
+    </script>
+
+    <section id="adopt">
+        <h2>Adopt a Dog Today</h2>
+        <form method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br/>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br/>
+            <label for="dog">Select a Dog:</label>
+            <select id="dog" name="dog" required>
+                <option value="golden">Golden Retriever</option>
+                <option value="labrador">Labrador</option>
+                <option value="pug">Pug</option>
+                <option value="german_shepherd">German Shepherd</option>
+                <!-- Add more options for different dog breeds -->
+            </select>
+            <br/>
+            <button type="submit">Adopt Now</button>
+        </form>
+    </section>
+
+    <section id="dogs">
+        <h2>Dogs We Own</h2>
+        <div class="dogs-container">
+            <img src="gr.jpeg" alt="Dog 1" class="dog-image">
+            <img src="lab.jpeg" alt="Dog 2" class="dog-image">
+            <img src="pug.jpeg" alt="Dog 3" class="dog-image">
+            <img src="gs.jpeg" alt="Dog 4" class="dog-image">
+        </div>
+    </section>
+
+    <section id="video">
+        <video width="100%" controls>
+            <source src="dog_adoption_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <section id="summary">
+        <h2>Why Choose Us?</h2>
+        <summary>
+            <p>We are committed to finding loving homes for dogs in need. Our adoption process is designed to ensure a seamless and joyful experience for both pets and owners. Here's why you should choose us:</p>
+            <ul>
+                <li>Compassionate Care: Our dogs receive compassionate care, including vaccinations and spaying/neutering.</li>
+                <li>Personalized Matchmaking: We prioritize the well-being of both pets and adopters, ensuring the perfect match.</li>
+                <li>Lifetime Support: Our commitment doesn't end with adoption. We provide ongoing support to ensure a happy and healthy life for your furry friend.</li>
+                <li>Making a Difference: By choosing us, you contribute to the larger mission of making a positive impact on the lives of animals in need.</li>
+            </ul>
+        </summary>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to reach out to us.</p>
+        <address>
+            <p>Phone: <a href="tel:+123456789">123-456-789</a></p>
+            <p>Email: <a href="mailto:info@dogadoptioncenter.com">info@dogadoptioncenter.com</a></p>
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PAWsitive. All rights reserved.</p>
+    </footer>
+</body>
+</html>
